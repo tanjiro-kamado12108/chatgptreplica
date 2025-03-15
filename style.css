@@ -1,0 +1,64 @@
+body {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', cursive; /* A cute, playful font */
+    background-color: #f8f0e3; /* A warm, soft background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#chat-container {
+    width: 400px;
+    border: 2px solid #e0c2a3; /* A slightly thicker border */
+    border-radius: 12px; /* More rounded corners */
+    background-color: #fffaf0; /* A very light, warm white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#chat-log {
+    height: 300px;
+    padding: 15px;
+    overflow-y: auto;
+    border-bottom: 2px solid #e0c2a3;
+    background-color: #f9f9f9;
+}
+
+#input-area {
+    display: flex;
+    padding: 15px;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #d2b48c; /* A warm, brown border */
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+#send-button {
+    padding: 10px 20px;
+    background-color: #ffb6c1; /* A soft pink button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#send-button:hover {
+    background-color: #ff99ac; /* A slightly darker pink on hover */
+}
+
+#chat-log p {
+    margin: 8px 0;
+    padding: 12px;
+    background-color: #e6f7ff; /* A soft blue message background */
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 80%;
+    word-wrap: break-word;
+}
